@@ -12,17 +12,20 @@ public class ForPractice {
 
         String mail = JOptionPane.showInputDialog("Introduce tu email:");
 
-        boolean at = false;
+        int at = 0;
+        boolean dot = false;
 
         for (int i = 0; i < mail.length(); i++) {
 
             if (mail.charAt(i) == '@') {
-                at = true;
-                break;
+                at++;
+            }
+            if (mail.charAt(i) == '.') {
+                dot = true;
             }
         }
 
-        if (at) {
+        if (at == 1 && dot) {
             System.out.println("Email correcto");
         } else {
             System.out.println("Email incorrecto");
