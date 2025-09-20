@@ -4,7 +4,7 @@ Este repositorio contiene ejercicios didácticos y prácticos realizados para me
 
 ## Tecnologías usadas 🛠️
 
-- **Java SE** (Standard Edition)
+- **Java SE 21** (Standard Edition)
 - **IDE:** IntelliJ IDEA / Eclipse
 - **Sistema de compilación:** javac y ejecución por línea de comandos, o desde el IDE
 - **Git** para control de versiones
