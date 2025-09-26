@@ -28,8 +28,6 @@ public class Arrays2D {
             }
         }
 
-         */
-
         // Tutorial Example
         int [][] matrix=new int[4][5];
 
@@ -57,13 +55,34 @@ public class Arrays2D {
         matrix[3][3]=17;
         matrix[3][4]=7;
 
-        /*
         System.out.println(matrix[1][2]);
+
          */
 
-        for(int i=0; i<4; i++) {
-            for (int j=0; j<5; j++) {
+        // Tutorial Example 2
+        int[][] matrix= {
+                {10,15,18,19,21},
+                {5,15,18,29,21},
+                {19,15,18,35,21},
+                {100,15,7,19,21},
+        };
+
+        /*
+
+        // Option 1
+        for(int i=0; i< matrix.length; i++) {
+            for (int j=0; j<matrix[i].length; j++) {
                 System.out.print((matrix[i][j])+" ");
+            }
+            System.out.println();
+        }
+
+         */
+
+        // Option 2 (For-Each)
+        for (int [] fila:matrix) {
+            for (int colum: fila) {
+                System.out.print(colum + " ");
             }
             System.out.println();
         }
