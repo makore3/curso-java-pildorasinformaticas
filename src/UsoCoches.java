@@ -9,7 +9,10 @@ public class UsoCoches {
 
         Coche mazda = new Coche();
 
-        mazda.color="azul";
+        mazda.color = "azul";
+        mazda.setRuedas(4820);
         mazda.girar();
+
+        System.out.println("El coche tiene: " + mazda.getRuedas());
     }
 }
