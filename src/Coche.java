@@ -1,10 +1,22 @@
 public class Coche {
 
+    // Método constructor
+    public Coche() {
+        ancho = 5;
+        alto = 5;
+        peso = 5;
+        ruedas = 4;
+        color = "gris";
+    }
+
     // Variables
     private double ancho;
-    private double alto;
+    public double alto;
     private double peso;
+    private int ruedas;
+    private String color;
 
+    // Métodos
     public double getAncho() {
         return ancho;
     }
@@ -33,16 +45,12 @@ public class Coche {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String c) {
+        color = c;
     }
 
-    private String color;
-    private int ruedas;
-
-    // Métodos
     public void setRuedas(int r) {
-        if(r<3 || r>4) {
+        if(r<3 || r>8) {
             System.out.println("El nro de ruedas no puede ser ese");
         } else {
             ruedas = r;
