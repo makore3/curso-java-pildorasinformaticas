@@ -2,9 +2,6 @@ public class Coche {
 
     // Método constructor
     public Coche() {
-        ancho = 5;
-        alto = 5;
-        peso = 5;
         ruedas = 4;
         color = "gris";
     }
@@ -45,15 +42,15 @@ public class Coche {
         return color;
     }
 
-    public void setColor(String c) {
-        color = c;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public void setRuedas(int r) {
-        if(r<3 || r>8) {
+    public void setRuedas(int ruedas) {
+        if(ruedas<3 || ruedas>8) {
             System.out.println("El nro de ruedas no puede ser ese");
         } else {
-            ruedas = r;
+            this.ruedas = ruedas;
         }
     }
 
